@@ -54,7 +54,7 @@ namespace MethodReturn
             int length = Convert.ToInt32(lengthInput.Text);
             int width = Convert.ToInt32(widthInput.Text);
 
-            int areaOfRectangle = Area(width,length);
+            int areaOfRectangle = Area(width, length);
 
             q2Output.Text = $"The area is {areaOfRectangle} units squared";
 
@@ -73,9 +73,10 @@ namespace MethodReturn
             /// 
             /// Input: 200
             /// The total price is $100.00
+            int copies = Convert.ToInt32(copiesInput.Text);
 
-
-
+            int PrintPrice(copies);
+            q3Output.Text = $"The total is {}total.ToString("C")
         }
 
         /// 1. Create a method called Add, that accepts 2 int 
@@ -113,6 +114,30 @@ namespace MethodReturn
         /// 51 - 100 prints:  $0.65/print
         /// 101 or over:  $0.50/print
 
+        public double PrintPrice(int prints)
+        {
+        double price = 0;
+
+        if(prints <= 10)
+        {
+            price = prints * 1.00;
+        }
+        else if (prints <= 50)
+            {
+            
+            }
+
+        else if (prints <= 100)
+            {
+
+            }
+        else
+            {
+
+            }
+
+        return price;
+        }
 
     }
 }
